@@ -8,9 +8,8 @@ on:
   workflow_dispatch: {}
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write    # allows reading and writing repo files, e.g., gh-pages branch
+  pages: write       # required to deploy GitHub Pages
 
 jobs:
   build-and-deploy:
